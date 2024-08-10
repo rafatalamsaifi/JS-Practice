@@ -51,18 +51,46 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 4. How to find second largest value, and remove first largest value in Array? */
 
-const myArr = [1, 67, 34, 54, 2];
+// const myArr = [1, 67, 34, 54, 2];
 
-const secondLargestVal = (arr)=>{
-    fLargVal = Math.max(...arr)
-    index = arr.indexOf(fLargVal)
-    arr.splice(index, 1)
-    secLargVal = Math.max(...arr)
-    return(secLargVal)
-} 
-console.log(secondLargestVal(myArr))
+// const secondLargestValue = (arr)=>{
+//    const firstLargestValue = Math.max(...arr);
+//     const index = arr.indexOf(firstLargestValue)
+//     arr.splice(index, 1)
+//     const secLarVal = Math.max(...arr)
+//     return secLarVal
+// }
+
+// console.log(secondLargestValue(myArr))
+
+
+
 
 /** 5. What is difference between Filter() and Find() method?  */
+
+// filter():- method matches all the elements in the array and return a new array
+// find():- find method returns only first matched element 
+
+// const objArr = [
+//     { name: "samar", score: 1},
+//     { name: "rafat", score: 2},
+//     { name: "afreen", score: 3},
+//     { name: "asif", score: 4},
+//     { name: "zareen", score: 5},
+// ]
+
+// const myData1 = (arr)=>{
+//     return filter = arr.filter(item => item.score < 3)  
+// }
+
+// const myData2 = (arr)=>{
+//     return arr.find(item => item.score < 3)
+// }
+
+// console.log(myData2(objArr))
+
+
+
 
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
 

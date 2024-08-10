@@ -1,9 +1,9 @@
 // Reverse String
 
-const text = "Hello";
-const spText = text.split("");
-const revText = spText.reverse();
-console.log(revText);
+// const text = "Hello";
+// const spText = text.split("");
+// const revText = spText.reverse();
+// console.log(revText);
 
 // const myStr = "hello"
 // const strSplt = myStr.split("")

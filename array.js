@@ -100,10 +100,10 @@ const table = [2, 4, 6, 8, 10];
 //const arrFill = fruits3.fill("kiwi", 1, 3); //adding value from start to end (value, start, end), but default value is 0 index
 
 //filter
-// const arrFilter = num.filter((n) => n != 1); // this creates new array
+// const arrFilter = num.filter((n) => n != 1); // this returns the matched values and creates a new array
 
 //find
-// const arrFind = num.find((n) => n == 3); //this will return only one element from an array
+// const arrFind = num.find((n) => n == 3); //this will return only one element\(first index) from an array
 
 //findIndex
 // const arrFinInd = num.findIndex((n) => n == 4); //this will return index element
