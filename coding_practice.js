@@ -91,8 +91,32 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 
 
-
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
+
+const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
+const missArr = [];
+
+const missingValue = (arr)=>{
+    const maxVal = Math.max(...arr)
+    const minVal = Math.min(...arr)
+    for(let i=minVal; i<maxVal; i++){
+        console.log(arr.indexOf(i))
+        if(arr.indexOf(i)<0){
+            missArr.push(i)
+        }
+    }
+    return(missArr)
+}
+
+console.log(missingValue(numArr))
+
+// example to know how to loop works
+
+// for (i=1; i<10; i++){ 
+//     console.log(i)
+// }
+
+
 
 /** 7. How to find even or odd number in a given array? */
 
