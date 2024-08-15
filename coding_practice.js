@@ -1,8 +1,5 @@
 /** Coding/Technical Interview  Questions & Answers */
 
-
-
-
 /** 1. How to find duplicate elements in a given Array?  */
 
 // const arrNumber = [1, 2, 4, 2, 5, 4, 5]
@@ -18,9 +15,6 @@ For 5 (index 4), arr.indexOf(5) is 4, so 4 === 4, not included.
 For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 */
 
-
-
-
 /** 2. How to find Max and Min value in a given Array?  */
 
 // const myArr = [1, 67, 34, 54, 2];
@@ -34,20 +28,15 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // The reduce() method does not execute the function for empty array elements.
 // The reduce() method does not change the original array.
 
-
-
-
 /** 3. What is the difference between '==' and '==='?  */
 
-// == compares the data values 
+// == compares the data values
 // === compare the data values and types
- 
+
 // let x = 2;
 // let y = "2"
 // console.log(x == y) // true
 // console.log(x === y) // false
-
-
 
 /** 4. How to find second largest value, and remove first largest value in Array? */
 
@@ -63,13 +52,10 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 // console.log(secondLargestValue(myArr))
 
-
-
-
 /** 5. What is difference between Filter() and Find() method?  */
 
 // filter():- method matches all the elements in the array and return a new array
-// find():- find method returns only first matched element 
+// find():- find method returns only first matched element
 
 // const objArr = [
 //     { name: "samar", score: 1},
@@ -80,7 +66,7 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // ]
 
 // const myData1 = (arr)=>{
-//     return filter = arr.filter(item => item.score < 3)  
+//     return filter = arr.filter(item => item.score < 3)
 // }
 
 // const myData2 = (arr)=>{
@@ -88,8 +74,6 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // }
 
 // console.log(myData2(objArr))
-
-
 
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
 
@@ -112,11 +96,9 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 // example to know how to loop works
 
-// for (i=1; i<10; i++){ 
+// for (i=1; i<10; i++){
 //     console.log(i)
 // }
-
-
 
 /** 7. How to find even or odd number in a given array? */
 
@@ -132,9 +114,6 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 // console.log(evenVals(arrNumbers))
 // console.log(oddVals(arrNumbers))
-
-
-
 
 /** 8. How to find the sum of all elements in a given array?  */
 
@@ -161,22 +140,66 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 9. How to find Factorial(n!) of a given number?  */
 
-const numArr = [ 5, 3, 6, 2 ]
+// const numArr = [ 5, 3, 6, 2 ]
 
-let fact = 1
-const factFunc = (arr)=>{
-    for( let i = 0; i < arr.length; i++){
-        fact *= arr[i]
-    }
-    return fact
-}
+// let fact = 1
+// const factFunc = (arr)=>{
+//     for( let i = 0; i < arr.length; i++){
+//         fact *= arr[i]
+//     }
+//     return fact
+// }
 
-console.log(factFunc(numArr))
-
+// console.log(factFunc(numArr))
 
 /** 10. How to Find Prime number? */
 
-/** 11. How to find vowels from string? */
+// let newNumber = 3;
+
+// if (newNumber === 1) {
+//   console.log(`${newNumber} is not prime neither composite`);
+// } else if (newNumber < 1) {
+//   console.log(`Prime number of ${newNumber} is not possible`);
+// } else {
+//   for (let i = 2; i < newNumber; i++) {
+//     if (newNumber % i === 0) {
+//       var result = `${newNumber} is not prime number`;
+//       break;
+//     } else {
+//       var result = `${newNumber} is prime number`;
+//     }
+//   }
+//   console.log(result)
+// }
+
+/** 11. How to find vowels from string and find number of vowels? */
+
+//method: 1 
+// let val = "f";
+// val = val.toLocaleLowerCase()
+
+//     if( val == "a" || val == "e" || val == "i" || val == "o" || val == "u"){
+//         console.log("this is a vowel")
+//     }else{
+//         console.log("this is consonent")
+//     }
+
+//method: 2
+
+var string = "rafat";
+const vowels = ['a', 'e', 'i', 'o', 'u']
+const countVowel = (str) => {
+    var count = 0;
+    for(let letter of str.toLowerCase()){
+        if(vowels.includes(letter)){
+            count++
+        }
+    }
+    return count
+}
+
+console.log(countVowel(string))
+
 
 /** 12. How to reverse a string? */
 
@@ -221,5 +244,3 @@ console.log(factFunc(numArr))
 
 // const nthValue = numsArr[index]
 // console.log(nthValue)
-
-
