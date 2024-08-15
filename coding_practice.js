@@ -93,22 +93,22 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
 
-const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
-const missArr = [];
+// const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
+// const missArr = [];
 
-const missingValue = (arr)=>{
-    const maxVal = Math.max(...arr)
-    const minVal = Math.min(...arr)
-    for(let i=minVal; i<maxVal; i++){
-        console.log(arr.indexOf(i))
-        if(arr.indexOf(i)<0){
-            missArr.push(i)
-        }
-    }
-    return(missArr)
-}
+// const missingValue = (arr)=>{
+//     const maxVal = Math.max(...arr)
+//     const minVal = Math.min(...arr)
+//     for(let i=minVal; i<maxVal; i++){
+//         console.log(arr.indexOf(i))
+//         if(arr.indexOf(i)<0){
+//             missArr.push(i)
+//         }
+//     }
+//     return(missArr)
+// }
 
-console.log(missingValue(numArr))
+// console.log(missingValue(numArr))
 
 // example to know how to loop works
 
@@ -120,9 +120,59 @@ console.log(missingValue(numArr))
 
 /** 7. How to find even or odd number in a given array? */
 
+// const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
+
+// const evenVals = (arr)=>{
+//     return arr.filter(item => item%2===0)
+// }
+
+// const oddVals = (arr)=>{
+//     return arr.filter(item => item%2!==0)
+// }
+
+// console.log(evenVals(arrNumbers))
+// console.log(oddVals(arrNumbers))
+
+
+
+
 /** 8. How to find the sum of all elements in a given array?  */
 
+// const numArr = [1, 2, 3, 4]
+
+// const sumOfArr = (arr)=>{
+//     return arr.reduce((pre, cur)=>{
+//        return pre + cur
+//     })
+// }
+
+// console.log(sumOfArr(numArr))
+
+// let initVal = 0;
+
+// const sumFunction = (arr) => {
+//     for(let i = 0; i < arr.length; i++){
+//         initVal += arr[i]
+//     }
+//     return initVal
+// }
+
+// console.log(sumFunction(numArr))
+
 /** 9. How to find Factorial(n!) of a given number?  */
+
+const numArr = [ 5, 3, 6, 2 ]
+
+let fact = 1
+const factFunc = (arr)=>{
+    for( let i = 0; i < arr.length; i++){
+        fact *= arr[i]
+    }
+    return fact
+}
+
+console.log(factFunc(numArr))
+
 
 /** 10. How to Find Prime number? */
 
@@ -162,4 +212,14 @@ console.log(missingValue(numArr))
 
 /** 28. Program to check Armstrong Number */
 
-/** 29.  */
+/** 29. Find the nth value */
+
+// const numsArr = [ 1, 2, 3, 4, 5 ]
+// const position = 12
+
+// const index = (position - 1) % numsArr.length
+
+// const nthValue = numsArr[index]
+// console.log(nthValue)
+
+
