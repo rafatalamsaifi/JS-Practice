@@ -186,24 +186,40 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 //method: 2
 
-var string = "rafat";
-const vowels = ['a', 'e', 'i', 'o', 'u']
-const countVowel = (str) => {
-    var count = 0;
-    for(let letter of str.toLowerCase()){
-        if(vowels.includes(letter)){
-            count++
-        }
-    }
-    return count
-}
+// var string = "rafat";
+// const vowels = ['a', 'e', 'i', 'o', 'u']
+// const countVowel = (str) => {
+//     var count = 0;
+//     for(let letter of str.toLowerCase()){
+//         if(vowels.includes(letter)){
+//             count++
+//         }
+//     }
+//     return count
+// }
 
-console.log(countVowel(string))
+// console.log(countVowel(string))
 
 
 /** 12. How to reverse a string? */
 
+// const reverseString = (str) => {
+//     let strToArr = str.split("")
+//     return strToArr.reverse().join("")
+// }
+
+// console.log(reverseString("hello")) 
+
 /** 13. How to find palindrome? */
+
+const str = "rafat"
+
+const findIsPalindrom = (str) => {
+    reverseString = str.split("").reverse().join("").toLowerCase()
+    return reverseString === str ? true : false
+}
+console.log(findIsPalindrom(str))  
+
 
 /** 14. How to swap two variables without using third variable? */
 
