@@ -174,7 +174,7 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 11. How to find vowels from string and find number of vowels? */
 
-//method: 1 
+//method: 1
 // let val = "f";
 // val = val.toLocaleLowerCase()
 
@@ -200,7 +200,6 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 // console.log(countVowel(string))
 
-
 /** 12. How to reverse a string? */
 
 // const reverseString = (str) => {
@@ -208,28 +207,106 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 //     return strToArr.reverse().join("")
 // }
 
-// console.log(reverseString("hello")) 
+// console.log(reverseString("hello"))
 
 /** 13. How to find palindrome? */
 
-const str = "rafat"
+// const str = "rafat"
 
-const findIsPalindrom = (str) => {
-    reverseString = str.split("").reverse().join("").toLowerCase()
-    return reverseString === str ? true : false
-}
-console.log(findIsPalindrom(str))  
-
+// const findIsPalindrom = (str) => {
+//     reverseString = str.split("").reverse().join("").toLowerCase()
+//     return reverseString === str ? true : false
+// }
+// console.log(findIsPalindrom(str))
 
 /** 14. How to swap two variables without using third variable? */
 
+// let a = 4;
+// let b = 6;
+
+// with third variable
+// let temp = a
+// a=b
+// b=a
+
+// without third variable
+
+// [a, b] = [b, a]
+
+// console.log(`value of variable a is ${a} and value of variable b is ${b}`)
+
 /** 15. How to merge two arrays and sort them? */
+
+// const arr1 = [ 15, 4, 2];
+// const arr2 = [ 5, 30, 8];
+
+// concat method
+
+// const concatArr = arr1.concat(arr2);
+// const sortedArr = concatArr.sort((a, b)=> a-b)
+
+// spreadOperator method
+// const concatWithSpread = [...arr1, ...arr2]
+
+// const sortedArr = concatWithSpread.sort((a, b)=> a-b)
+// console.log(sortedArr)
 
 /** 16. How to find factors of a given integer? */
 
+// with positive number
+// const num = 17
+// console.log(`Factor of the number ${num}`)
+// for(let i = 0; i<= num; i++){
+//     if(num%i == 0){
+//         console.log(`value is ${i}`)
+//     }
+// }
+
+// with negative number
+
+// const num = -12
+// console.log(`Factor of the number ${num}`)
+// for(let i = 0; i<= Math.abs(num); i++){
+//     if(num%i == 0){
+//         console.log(`value is ${-i}`)
+//     }
+// }
+
 /** 17. How to make calculator? */
 
+// const operator = prompt("Please choose you operator form +, -, *, / ");
+// const firstNum = parseFloat(prompt("Kindly enter your first Number now"));
+// const secondNum = parseFloat(prompt("Kindly enter your second Number now"));
+
+// if (operator === "+") {
+//   result = firstNum + secondNum;
+// } else if (operator === "-") {
+//   result = firstNum - secondNum;
+// } else if (operator === "*") {
+//   result = firstNum * secondNum;
+// } else if (operator === "/") {
+//   result = firstNum / secondNum;
+// } else {
+//   console.log("Something is wrong please enter a valid input");
+// }
+
+// console.log(result);
+
 /** 18. How to compare to Arrays are equal or not? */
+
+var arr1 = [2, 6, 4, 24];
+var arr2 = [6, 2, 24, 4];
+
+const isArrSame = arr1.length == arr2.length && 
+// indexOf method return -1 if element is not exist in array
+// every method check each and every element fullfill the condition exist in array
+arr1.every((curElem)=>{
+    if(arr2.indexOf(curElem)>-1){
+    return(curElem=[arr2.indexOf(curElem)])
+    }
+})
+
+console.log(isArrSame)
 
 /** 19. How to find intersection of two Arrays/Sets? */
 
