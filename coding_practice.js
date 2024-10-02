@@ -77,8 +77,8 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
 
-// const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
-// const missArr = [];
+const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
+const missArr = [];
 
 // const missingValue = (arr)=>{
 //     const maxVal = Math.max(...arr)
@@ -89,10 +89,11 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 //             missArr.push(i)
 //         }
 //     }
-//     return(missArr)
+//     return missArr 
 // }
 
 // console.log(missingValue(numArr))
+
 
 // example to know how to loop works
 
@@ -102,7 +103,7 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 7. How to find even or odd number in a given array? */
 
-// const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
+const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // const evenVals = (arr)=>{
 //     return arr.filter(item => item%2===0)
@@ -172,9 +173,30 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 //   console.log(result)
 // }
 
+// const newNum = 4;
+
+// if (newNum === 1) {
+//     console.log(`${newNum} is neither prime number nor composite number`)
+// } else if(newNum < 1){
+//     console.log(`Prime number is not possible for ${newNum}`)
+// }else{
+//     let isPrime = true
+//     for(let i = 2; i < newNum; i++){
+//         if(newNum % i === 0){
+//             isPrime = false
+//         }
+//     }
+//     if (isPrime) {
+//         console.log(`${newNum} is a prime number`)
+//     } else {
+//         console.log(`${newNum} is not a prime number`)
+//     }
+
+// }
+
 /** 11. How to find vowels from string and find number of vowels? */
 
-//method: 1
+//step: 1
 // let val = "f";
 // val = val.toLocaleLowerCase()
 
@@ -184,7 +206,7 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 //         console.log("this is consonent")
 //     }
 
-//method: 2
+//step: 2
 
 // var string = "rafat";
 // const vowels = ['a', 'e', 'i', 'o', 'u']
@@ -199,6 +221,7 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // }
 
 // console.log(countVowel(string))
+
 
 /** 12. How to reverse a string? */
 
@@ -251,6 +274,8 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // const sortedArr = concatWithSpread.sort((a, b)=> a-b)
 // console.log(sortedArr)
 
+// const concatArr = arr1.concat(arr2)
+
 /** 16. How to find factors of a given integer? */
 
 // with positive number
@@ -275,7 +300,7 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 /** 17. How to make calculator? */
 
 // const operator = prompt("Please choose you operator form +, -, *, / ");
-// const firstNum = parseFloat(prompt("Kindly enter your first Number now"));
+// const firstNum = parseFloat(prompt("Kindly enter your first Number now")); //kindly use parseFloat because prompt take any value as a string
 // const secondNum = parseFloat(prompt("Kindly enter your second Number now"));
 
 // if (operator === "+") {
@@ -294,33 +319,120 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 18. How to compare to Arrays are equal or not? */
 
-var arr1 = [2, 6, 4, 24];
-var arr2 = [6, 2, 24, 4];
+// const firstArray = [4, 34, 65, 6];
+// const secondArray = [34, 6, 65, 4];
 
-const isArrSame = arr1.length == arr2.length && 
-// indexOf method return -1 if element is not exist in array
-// every method check each and every element fullfill the condition exist in array
-arr1.every((curElem)=>{
-    if(arr2.indexOf(curElem)>-1){
-    return(curElem=[arr2.indexOf(curElem)])
-    }
-})
+// const areEqual = (arr1, arr2) => {
+//     if (arr1.length !== arr2.length) return false; // Check length first
+//     return arr1.every(item => arr2.includes(item)); // Check each element
+// };
 
-console.log(isArrSame)
+// console.log(areEqual(arrOne, arrTwo)); // Output: false
 
 /** 19. How to find intersection of two Arrays/Sets? */
 
+// const arr1 = [1, 2, 3, 5, 2]
+// const arr2 = [3, 4, 1, 4, 4, 2]
+
+// const intersection = arr1.filter(item => arr2.includes(item))
+
+// console.log([... new Set(intersection)]) //set object is used to store unique values
+
 /** 20. How to find union of two Arrays/Sets? */
+
+// const arr1 = [1, 3, 5, 3, 6, 7]
+// const arr2 = [2, 4, 7, 8, 2]
+
+// const unionArray = [...arr1, ...arr2]
+
+// console.log([...new Set(unionArray)])
 
 /** 21. how to convert celsius to fahrenheit or fahrenheit to celsius? */
 
+// let input = parseFloat(prompt("please enter the valid value"))
+// const celsiusToFahrenheit = input*1.8 + 32
+// console.log(celsiusToFahrenheit)
+
+// const fahrenheitToCelsius = 5/9*(input - 32)
+// console.log(fahrenheitToCelsius)
+
 /** 22. How to convert Kilometer into Miles? */
+
+// const inputValue = parseFloat(prompt("Kindly enter the valid value"))
+// const factor = 0.621371;
+// const kilometerToMiles = inputValue * factor
+
+// console.log(kilometerToMiles)
 
 /** 23. Program to convert First Letter of a String into Uppercase */
 
+// let myName = "rafat alam saifi";
+
+// const capitalizeString = (str)=>{
+//     const spltArr = str.split(" ")
+//     const newStr = spltArr.map(item => item.charAt(0).toUpperCase() + item.slice(1)).join(' ')
+//     return newStr
+// }
+
+// console.log(capitalizeString(myName))
+
 /** 24. Program to find fibonacci sequence */
 
-/** 25. Program to print star and number patterns Rightn Triangle, Pyramid and Diamond shape */
+// var a = 0;
+// var b = 1;
+
+// for(let i = 0; i <= 15; i++){
+// var temp = a+b
+// a = b
+// b = temp
+// console.log(temp)
+// }
+
+
+/** 25. Program to print star and number patterns Right, Triangle, Pyramid and Diamond shape */
+
+// // Right Angle
+//     for (let i = 1; i <= 6; i++) {      // Outer loop controls the number of rows
+//         for (let j = 1; j <= i; j++) {  // Inner loop controls the number of stars in each row
+//             document.write("*" + "&nbsp;&nbsp;");  // Print a star followed by spaces
+//         }
+//         document.write("<br>");  // Move to the next line after each row is printed
+//     }
+
+
+// // Triangle
+//     for (let i = 1; i <= 6; i++) {             // Outer loop controls the number of rows
+//         for (let j = 1; j <= 6 - i; j++) {     // First inner loop for spaces
+//             document.write("&nbsp;&nbsp;");    // Print spaces to align the stars
+//         }
+
+//         for (let k = 1; k <= i; k++) {         // Second inner loop for stars
+//             document.write("*" + "&nbsp;&nbsp;");  // Print stars followed by spaces
+//         }
+//         document.write("<br>");  // Move to the next line after each row
+//     }
+
+// // Diamond
+//     for (let i = 1; i <= 6; i++) {             // Outer loop controls the number of rows (1 to 6)
+//         for (let j = 1; j <= 6 - i; j++) {     // First inner loop for leading spaces (decreases with each row)
+//             document.write("&nbsp;&nbsp;");    // Print spaces to align the stars
+//         }
+
+//         for (let k = 1; k <= i; k++) {         // Second inner loop for stars (increases with each row)
+//             document.write("*" + "&nbsp;&nbsp;");  // Print stars followed by spaces
+//         }
+//         document.write("<br>");  // Move to the next line after each row
+//     }
+//     for (let i = 1; i <= 6; i++) {             // Outer loop controls the number of rows (1 to 6)
+//         for (let j = 1; j <= i; j++) {         // First inner loop for leading spaces (increases with each row)
+//             document.write("&nbsp;&nbsp;");    // Print spaces to align the stars
+//         }
+    
+//         for (let k = 1; k <= 6 - i; k++) {     // Second inner loop for stars (decreases with each row)
+//             document.write("*" + "&nbsp;&nbsp;");  // Print stars followed by spaces
+//         }
+//         document.write("<br>");  // Move to the next line after each row
+//     }
 
 /** 26. Program to find number of Occurences of a character in a string */
 
