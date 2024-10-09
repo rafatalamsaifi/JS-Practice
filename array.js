@@ -163,5 +163,5 @@ const table = [2, 4, 6, 8, 10];
 // num.forEach((n) => n * 2);
 
 // num.forEach((n) => console.log(n * 2));
-num.forEach(n => console.log(n *2))
+// num.forEach(n => console.log(n *2))
 // console.log(num)
