@@ -50,7 +50,6 @@
   //return newArr.join("");
 
 
-
 //   return str.split('').reduce((revString, char) => char + revString, '');
 // }
 
