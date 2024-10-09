@@ -1,4 +1,4 @@
-/** Coding/Technical Interview  Questions & Answers */
+                /** Coding/Technical Interview  Questions & Answers */
 
 /** 1. How to find duplicate elements in a given Array?  */
 
@@ -15,6 +15,10 @@ For 5 (index 4), arr.indexOf(5) is 4, so 4 === 4, not included.
 For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 */
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 2. How to find Max and Min value in a given Array?  */
 
 // const myArr = [1, 67, 34, 54, 2];
@@ -28,6 +32,10 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // The reduce() method does not execute the function for empty array elements.
 // The reduce() method does not change the original array.
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 3. What is the difference between '==' and '==='?  */
 
 // == compares the data values
@@ -37,6 +45,10 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // let y = "2"
 // console.log(x == y) // true
 // console.log(x === y) // false
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 4. How to find second largest value, and remove first largest value in Array? */
 
@@ -51,6 +63,10 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // }
 
 // console.log(secondLargestValue(myArr))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 5. What is difference between Filter() and Find() method?  */
 
@@ -75,10 +91,14 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 // console.log(myData2(objArr))
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
 
-const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
-const missArr = [];
+// const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
+// const missArr = [];
 
 // const missingValue = (arr)=>{
 //     const maxVal = Math.max(...arr)
@@ -101,6 +121,10 @@ const missArr = [];
 //     console.log(i)
 // }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 7. How to find even or odd number in a given array? */
 
 const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
@@ -115,6 +139,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // console.log(evenVals(arrNumbers))
 // console.log(oddVals(arrNumbers))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 8. How to find the sum of all elements in a given array?  */
 
@@ -139,6 +167,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // console.log(sumFunction(numArr))
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 9. How to find Factorial(n!) of a given number?  */
 
 // const numArr = [ 5, 3, 6, 2 ]
@@ -152,6 +184,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // }
 
 // console.log(factFunc(numArr))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 10. How to Find Prime number? */
 
@@ -194,6 +230,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 11. How to find vowels from string and find number of vowels? */
 
 //step: 1
@@ -223,6 +263,9 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // console.log(countVowel(string))
 
 
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 12. How to reverse a string? */
 
 // const reverseString = (str) => {
@@ -231,6 +274,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // }
 
 // console.log(reverseString("hello"))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 13. How to find palindrome? */
 
@@ -241,6 +288,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 //     return reverseString === str ? true : false
 // }
 // console.log(findIsPalindrom(str))
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 14. How to swap two variables without using third variable? */
 
@@ -257,6 +308,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // [a, b] = [b, a]
 
 // console.log(`value of variable a is ${a} and value of variable b is ${b}`)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 15. How to merge two arrays and sort them? */
 
@@ -275,6 +330,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // console.log(sortedArr)
 
 // const concatArr = arr1.concat(arr2)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 16. How to find factors of a given integer? */
 
@@ -297,6 +356,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 //     }
 // }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 17. How to make calculator? */
 
 // const operator = prompt("Please choose you operator form +, -, *, / ");
@@ -317,6 +380,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // console.log(result);
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 18. How to compare to Arrays are equal or not? */
 
 // const firstArray = [4, 34, 65, 6];
@@ -329,6 +396,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // console.log(areEqual(arrOne, arrTwo)); // Output: false
 
+
+////////////////////////////////////////////////////////////////////////////////////////////  
+
+
 /** 19. How to find intersection of two Arrays/Sets? */
 
 // const arr1 = [1, 2, 3, 5, 2]
@@ -337,6 +408,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // const intersection = arr1.filter(item => arr2.includes(item))
 
 // console.log([... new Set(intersection)]) //set object is used to store unique values
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 20. How to find union of two Arrays/Sets? */
 
@@ -347,6 +422,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 // console.log([...new Set(unionArray)])
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 21. how to convert celsius to fahrenheit or fahrenheit to celsius? */
 
 // let input = parseFloat(prompt("please enter the valid value"))
@@ -356,6 +435,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // const fahrenheitToCelsius = 5/9*(input - 32)
 // console.log(fahrenheitToCelsius)
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 22. How to convert Kilometer into Miles? */
 
 // const inputValue = parseFloat(prompt("Kindly enter the valid value"))
@@ -363,6 +446,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // const kilometerToMiles = inputValue * factor
 
 // console.log(kilometerToMiles)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 23. Program to convert First Letter of a String into Uppercase */
 
@@ -387,6 +474,9 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 // b = temp
 // console.log(temp)
 // }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
 
 
 /** 25. Program to print star and number patterns Right, Triangle, Pyramid and Diamond shape */
@@ -434,18 +524,95 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 //         document.write("<br>");  // Move to the next line after each row
 //     }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 26. Program to find number of Occurences of a character in a string */
+
+var string = "Rafat Alam Saifi"
+var letter = "a"
+
+let strLen = string.length
+var counter = 0
+
+for(let i = 0; i < strLen; i++){
+    if(string[i] == letter){
+        counter++
+    }
+}
+
+// console.log(`The ${letter} of ${string} is ${counter} times.`)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 27. Program to print the Table of any use defined number using function */
 
+const number = 4;
+
+const table = (num)=>{
+    for(let i = 1; i <= 10; i++){
+        var res = i * num
+        console.log(`${num} X ${i} = ${res}`)
+    }
+}
+
+// table(number)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /** 28. Program to check Armstrong Number */
+
+// Armstrong number wo hota hai jiska digits ko unki sankhya ke power tak uthane par asli number milta hai, aur jo nahi milta, wo Armstrong number nahi hota.
+
+// Armstrong Number Example:
+// 153 ek Armstrong number hai kyunki 1*1*1 + 5*5*5 + 3*3*3 = 153
+
+// Not Armstrong Number Example:
+// 123 ek Armstrong number nahi hai kyunki 1*1*1 + 2*2*2 + 3*3*3 = 36, jo 123 se alag hai
+
+function isArmstrongNumber(num) {
+    // Convert the number to a string to get the number of digits
+    let numStr = num.toString();
+    let numDigits = numStr.length;
+    
+    // Initialize sum variable
+    let sum = 0;
+
+    // Loop through each digit in the number
+    for (let i = 0; i < numDigits; i++) {
+        // Get the digit at position i, raise it to the power of numDigits, and add to the sum
+        let digit = parseInt(numStr[i]);
+        sum += Math.pow(digit, numDigits);
+    }
+
+    // If the sum equals the original number, it is an Armstrong number
+    return sum === num;
+}
+
+// Test the function with some examples
+let testNumber = 153;
+if (isArmstrongNumber(testNumber)) {
+    console.log(`${testNumber} is an Armstrong number.`);
+} else {
+    console.log(`${testNumber} is not an Armstrong number.`);
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /** 29. Find the nth value */
 
-// const numsArr = [ 1, 2, 3, 4, 5 ]
-// const position = 12
+const numsArr = [ 1, 2, 3, 4, 5 ]
+const position = 12
 
-// const index = (position - 1) % numsArr.length
+const index = (position - 1) % numsArr.length
 
-// const nthValue = numsArr[index]
+const nthValue = numsArr[index]
+
 // console.log(nthValue)
