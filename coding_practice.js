@@ -5,7 +5,7 @@
 const arrNumber = [1, 2, 4, 2, 5, 4, 5]
 const duplicate = arrNumber.filter((elem, index, arr)=>arr.indexOf(elem)!== index)
 
-// console.log(duplicate)
+console.log(duplicate)
 
 /** 
  * How it works
@@ -619,4 +619,4 @@ const index = (position - 1) % numsArr.length
 
 const nthValue = numsArr[index]
 
-console.log(nthValue)
+// console.log(nthValue)
