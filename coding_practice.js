@@ -2,9 +2,11 @@
 
 /** 1. How to find duplicate elements in a given Array?  */
 
-// const arrNumber = [1, 2, 4, 2, 5, 4, 5]
-// const duplicate = arrNumber.filter((elem, index, arr)=>arr.indexOf(elem)!== index)
+const arrNumber = [1, 2, 4, 2, 5, 4, 5]
+const duplicate = arrNumber.filter((elem, index, arr)=>arr.indexOf(elem)!== index)
+
 // console.log(duplicate)
+
 /** 
  * How it works
 For 1 (index 0), arr.indexOf(1) is 0, so 0 === 0, not included.
@@ -21,11 +23,12 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 2. How to find Max and Min value in a given Array?  */
 
-// const myArr = [1, 67, 34, 54, 2];
-// const maxNumber = (arr) => {
-//   return arr.reduce((pre, cur) => (pre > cur ? pre : cur));
-// };
-// console.log(maxNumber(myArr));
+const myArr1 = [1, 67, 34, 54, 2];
+const maxNumber = (arr) => {
+  return arr.reduce((pre, cur) => (pre > cur ? pre : cur));
+};
+
+// console.log(maxNumber(myArr1));
 
 // The reduce() method executes a reducer function for array element.
 // The reduce() method returns a single value: the function's accumulated result.
@@ -41,8 +44,9 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // == compares the data values
 // === compare the data values and types
 
-// let x = 2;
-// let y = "2"
+let x = 2;
+let y = "2"
+
 // console.log(x == y) // true
 // console.log(x === y) // false
 
@@ -52,17 +56,17 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 4. How to find second largest value, and remove first largest value in Array? */
 
-// const myArr = [1, 67, 34, 54, 2];
+const myArr2 = [1, 67, 34, 54, 2];
 
-// const secondLargestValue = (arr)=>{
-//    const firstLargestValue = Math.max(...arr);
-//     const index = arr.indexOf(firstLargestValue)
-//     arr.splice(index, 1)
-//     const secLarVal = Math.max(...arr)
-//     return secLarVal
-// }
+const secondLargestValue = (arr)=>{
+   const firstLargestValue = Math.max(...arr);
+    const index = arr.indexOf(firstLargestValue)
+    arr.splice(index, 1)
+    const secLarVal = Math.max(...arr)
+    return secLarVal
+}
 
-// console.log(secondLargestValue(myArr))
+// console.log(secondLargestValue(myArr2))
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -73,21 +77,21 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 // filter():- method matches all the elements in the array and return a new array
 // find():- find method returns only first matched element
 
-// const objArr = [
-//     { name: "samar", score: 1},
-//     { name: "rafat", score: 2},
-//     { name: "afreen", score: 3},
-//     { name: "asif", score: 4},
-//     { name: "zareen", score: 5},
-// ]
+const objArr = [
+    { name: "samar", score: 1},
+    { name: "rafat", score: 2},
+    { name: "afreen", score: 3},
+    { name: "asif", score: 4},
+    { name: "zareen", score: 5},
+]
 
-// const myData1 = (arr)=>{
-//     return filter = arr.filter(item => item.score < 3)
-// }
+const myData1 = (arr)=>{
+    return filter = arr.filter(item => item.score < 3)
+}
 
-// const myData2 = (arr)=>{
-//     return arr.find(item => item.score < 3)
-// }
+const myData2 = (arr)=>{
+    return arr.find(item => item.score < 3)
+}
 
 // console.log(myData2(objArr))
 
@@ -97,20 +101,20 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 /** 6. How to find the missing number in a given integer Array of 1 to 10? */
 
-// const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
-// const missArr = [];
+const numArr = [1, 2, 3, 4, 5, 6, 9, 10]
+const missArr = [];
 
-// const missingValue = (arr)=>{
-//     const maxVal = Math.max(...arr)
-//     const minVal = Math.min(...arr)
-//     for(let i=minVal; i<maxVal; i++){
-//         console.log(arr.indexOf(i))
-//         if(arr.indexOf(i)<0){
-//             missArr.push(i)
-//         }
-//     }
-//     return missArr 
-// }
+const missingValue = (arr)=>{
+    const maxVal = Math.max(...arr)
+    const minVal = Math.min(...arr)
+    for(let i=minVal; i<maxVal; i++){
+        console.log(arr.indexOf(i))
+        if(arr.indexOf(i)<0){
+            missArr.push(i)
+        }
+    }
+    return missArr 
+}
 
 // console.log(missingValue(numArr))
 
@@ -129,13 +133,13 @@ For 4 (index 5), arr.indexOf(4) is 2, so 2 !== 5, included.
 
 const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
-// const evenVals = (arr)=>{
-//     return arr.filter(item => item%2===0)
-// }
+const evenVals = (arr)=>{
+    return arr.filter(item => item%2===0)
+}
 
-// const oddVals = (arr)=>{
-//     return arr.filter(item => item%2!==0)
-// }
+const oddVals = (arr)=>{
+    return arr.filter(item => item%2!==0)
+}
 
 // console.log(evenVals(arrNumbers))
 // console.log(oddVals(arrNumbers))
@@ -146,24 +150,24 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 8. How to find the sum of all elements in a given array?  */
 
-// const numArr = [1, 2, 3, 4]
+const numArr1 = [1, 2, 3, 4]
 
-// const sumOfArr = (arr)=>{
-//     return arr.reduce((pre, cur)=>{
-//        return pre + cur
-//     })
-// }
+const sumOfArr = (arr)=>{
+    return arr.reduce((pre, cur)=>{
+       return pre + cur
+    })
+}
 
-// console.log(sumOfArr(numArr))
+// console.log(sumOfArr(numArr1))
 
-// let initVal = 0;
+let initVal = 0;
 
-// const sumFunction = (arr) => {
-//     for(let i = 0; i < arr.length; i++){
-//         initVal += arr[i]
-//     }
-//     return initVal
-// }
+const sumFunction = (arr) => {
+    for(let i = 0; i < arr.length; i++){
+        initVal += arr[i]
+    }
+    return initVal
+}
 
 // console.log(sumFunction(numArr))
 
@@ -173,17 +177,17 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 9. How to find Factorial(n!) of a given number?  */
 
-// const numArr = [ 5, 3, 6, 2 ]
+const numArr2 = [ 5, 3, 6, 2 ]
 
-// let fact = 1
-// const factFunc = (arr)=>{
-//     for( let i = 0; i < arr.length; i++){
-//         fact *= arr[i]
-//     }
-//     return fact
-// }
+let fact = 1
+const factFunc = (arr)=>{
+    for( let i = 0; i < arr.length; i++){
+        fact *= arr[i]
+    }
+    return fact
+}
 
-// console.log(factFunc(numArr))
+// console.log(factFunc(numArr2))
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -191,44 +195,44 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 10. How to Find Prime number? */
 
-// let newNumber = 3;
+let newNumber = 3;
 
-// if (newNumber === 1) {
-//   console.log(`${newNumber} is not prime neither composite`);
-// } else if (newNumber < 1) {
-//   console.log(`Prime number of ${newNumber} is not possible`);
-// } else {
-//   for (let i = 2; i < newNumber; i++) {
-//     if (newNumber % i === 0) {
-//       var result = `${newNumber} is not prime number`;
-//       break;
-//     } else {
-//       var result = `${newNumber} is prime number`;
-//     }
-//   }
+if (newNumber === 1) {
+  console.log(`${newNumber} is not prime neither composite`);
+} else if (newNumber < 1) {
+  console.log(`Prime number of ${newNumber} is not possible`);
+} else {
+  for (let i = 2; i < newNumber; i++) {
+    if (newNumber % i === 0) {
+      var result = `${newNumber} is not prime number`;
+      break;
+    } else {
+      var result = `${newNumber} is prime number`;
+    }
+  }
 //   console.log(result)
-// }
+}
 
-// const newNum = 4;
+const newNum = 4;
 
-// if (newNum === 1) {
-//     console.log(`${newNum} is neither prime number nor composite number`)
-// } else if(newNum < 1){
-//     console.log(`Prime number is not possible for ${newNum}`)
-// }else{
-//     let isPrime = true
-//     for(let i = 2; i < newNum; i++){
-//         if(newNum % i === 0){
-//             isPrime = false
-//         }
-//     }
-//     if (isPrime) {
-//         console.log(`${newNum} is a prime number`)
-//     } else {
-//         console.log(`${newNum} is not a prime number`)
-//     }
+if (newNum === 1) {
+    // console.log(`${newNum} is neither prime number nor composite number`)
+} else if(newNum < 1){
+    // console.log(`Prime number is not possible for ${newNum}`)
+}else{
+    let isPrime = true
+    for(let i = 2; i < newNum; i++){
+        if(newNum % i === 0){
+            isPrime = false
+        }
+    }
+    if (isPrime) {
+        // console.log(`${newNum} is a prime number`)
+    } else {
+        // console.log(`${newNum} is not a prime number`)
+    }
 
-// }
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -236,29 +240,29 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 11. How to find vowels from string and find number of vowels? */
 
-//step: 1
-// let val = "f";
-// val = val.toLocaleLowerCase()
+step: 1
+let val = "f";
+val = val.toLocaleLowerCase()
 
-//     if( val == "a" || val == "e" || val == "i" || val == "o" || val == "u"){
-//         console.log("this is a vowel")
-//     }else{
-//         console.log("this is consonent")
-//     }
+    if( val == "a" || val == "e" || val == "i" || val == "o" || val == "u"){
+        // console.log("this is a vowel")
+    }else{
+        // console.log("this is consonent")
+    }
 
 //step: 2
 
-// var string = "rafat";
-// const vowels = ['a', 'e', 'i', 'o', 'u']
-// const countVowel = (str) => {
-//     var count = 0;
-//     for(let letter of str.toLowerCase()){
-//         if(vowels.includes(letter)){
-//             count++
-//         }
-//     }
-//     return count
-// }
+var string = "rafat";
+const vowels = ['a', 'e', 'i', 'o', 'u']
+const countVowel = (str) => {
+    var count = 0;
+    for(let letter of str.toLowerCase()){
+        if(vowels.includes(letter)){
+            count++
+        }
+    }
+    return count
+}
 
 // console.log(countVowel(string))
 
@@ -268,10 +272,10 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 12. How to reverse a string? */
 
-// const reverseString = (str) => {
-//     let strToArr = str.split("")
-//     return strToArr.reverse().join("")
-// }
+const reverseString = (str) => {
+    let strToArr = str.split("")
+    return strToArr.reverse().join("")
+}
 
 // console.log(reverseString("hello"))
 
@@ -281,12 +285,12 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 13. How to find palindrome? */
 
-// const str = "rafat"
+const str = "rafat"
 
-// const findIsPalindrom = (str) => {
-//     reverseString = str.split("").reverse().join("").toLowerCase()
-//     return reverseString === str ? true : false
-// }
+const findIsPalindrom = (str) => {
+    reverseString = str.split("").reverse().join("").toLowerCase()
+    return reverseString === str ? true : false
+}
 // console.log(findIsPalindrom(str))
 
 
@@ -295,17 +299,17 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 14. How to swap two variables without using third variable? */
 
-// let a = 4;
-// let b = 6;
+let a = 4;
+let b = 6;
 
 // with third variable
-// let temp = a
-// a=b
-// b=a
+let temp = a
+a=b
+b=a
 
 // without third variable
 
-// [a, b] = [b, a]
+[a, b] = [b, a]
 
 // console.log(`value of variable a is ${a} and value of variable b is ${b}`)
 
@@ -315,8 +319,8 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 
 /** 15. How to merge two arrays and sort them? */
 
-// const arr1 = [ 15, 4, 2];
-// const arr2 = [ 5, 30, 8];
+const arr1 = [ 15, 4, 2];
+const arr2 = [ 5, 30, 8];
 
 // concat method
 
@@ -338,23 +342,23 @@ const arrNumbers = [ 1, 2, 53, 84, 5, 16, 7, 38, 19, 10]
 /** 16. How to find factors of a given integer? */
 
 // with positive number
-// const num = 17
+const num = 17
 // console.log(`Factor of the number ${num}`)
-// for(let i = 0; i<= num; i++){
-//     if(num%i == 0){
-//         console.log(`value is ${i}`)
-//     }
-// }
+for(let i = 0; i<= num; i++){
+    if(num%i == 0){
+        // console.log(`value is ${i}`)
+    }
+}
 
 // with negative number
 
-// const num = -12
+const numNew = -12
 // console.log(`Factor of the number ${num}`)
-// for(let i = 0; i<= Math.abs(num); i++){
-//     if(num%i == 0){
-//         console.log(`value is ${-i}`)
-//     }
-// }
+for(let i = 0; i<= Math.abs(num); i++){
+    if(numNew%i == 0){
+        // console.log(`value is ${-i}`)
+    }
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -595,11 +599,11 @@ function isArmstrongNumber(num) {
 }
 
 // Test the function with some examples
-let testNumber = 153;
+let testNumber = 372;
 if (isArmstrongNumber(testNumber)) {
-    console.log(`${testNumber} is an Armstrong number.`);
+    // console.log(`${testNumber} is an Armstrong number.`);
 } else {
-    console.log(`${testNumber} is not an Armstrong number.`);
+    // console.log(`${testNumber} is not an Armstrong number.`);
 }
 
 
@@ -615,4 +619,4 @@ const index = (position - 1) % numsArr.length
 
 const nthValue = numsArr[index]
 
-// console.log(nthValue)
+console.log(nthValue)
